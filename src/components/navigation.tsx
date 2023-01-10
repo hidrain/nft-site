@@ -46,7 +46,6 @@ export const Navigation = () => {
         <Section>
             <NavBar>
                 <Logo />
-
                 <Menu>
                     <MenuItem>Home</MenuItem>
                     <MenuItem>About</MenuItem>
@@ -55,7 +54,6 @@ export const Navigation = () => {
                     <MenuItem>Team</MenuItem>
                     <MenuItem>FAQ</MenuItem>
                 </Menu>
-
                 <Button text='Connect Wallet' link='#' />
             </NavBar>
         </Section>
