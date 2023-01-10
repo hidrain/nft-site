@@ -1,7 +1,6 @@
 import styled from 'styled-components'
 import GIF from '../assets/HomeVideo.mp4'
 
-
 const VideoContainer = styled.div`
     width: 100%;
 
