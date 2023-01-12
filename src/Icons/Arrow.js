@@ -1,5 +1,3 @@
-import * as React from "react"
-
 const Arrow = (props) => (
   <svg
     width={props.width || 50}
