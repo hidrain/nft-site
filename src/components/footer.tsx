@@ -1,6 +1,5 @@
 import styled from 'styled-components'
-
-type Props = {}
+import { Banner } from './banner'
 
 const Section = styled.section`
     min-height: 100vh;
@@ -8,14 +7,14 @@ const Section = styled.section`
     position: relative;
     background-color: ${props => props.theme.body};
     color: ${props => props.theme.text};
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    display: flex; 
     flex-direction: column; 
 `
 
 export const Footer = () => {
     return (
-        <Section>Footer</Section>
+        <Section>
+            <Banner />
+        </Section>
     )
 }

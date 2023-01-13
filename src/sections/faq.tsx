@@ -19,7 +19,6 @@ const Title = styled.h1`
     font-size: ${props => props.theme.fontxxl};
     text-transform: uppercase;
     color: ${props => props.theme.body};
-
     margin: 1rem auto;
     border-bottom: 2px solid ${props => props.theme.body};
     width: fit-content;
