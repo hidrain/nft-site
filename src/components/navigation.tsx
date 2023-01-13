@@ -1,8 +1,7 @@
 import styled from 'styled-components'
 import { Button } from './button'
 import { Logo } from './logo'
-
-type Props = {}
+import { scrollTo } from '../helpers/scrollTo'
 
 const Section = styled.section`
     width: 100vw;
@@ -43,16 +42,16 @@ const MenuItem = styled.li`
 
 export const Navigation = () => {
     return (
-        <Section>
+        <Section id='navigation'>
             <NavBar>
                 <Logo />
                 <Menu>
-                    <MenuItem>Home</MenuItem>
-                    <MenuItem>About</MenuItem>
-                    <MenuItem>RoadMap</MenuItem>
-                    <MenuItem>ShowCase</MenuItem>
-                    <MenuItem>Team</MenuItem>
-                    <MenuItem>FAQ</MenuItem>
+                    <MenuItem onClick={() => scrollTo('home')}>Home</MenuItem>
+                    <MenuItem onClick={() => scrollTo('about')}>About</MenuItem>
+                    <MenuItem onClick={() => scrollTo('roadmap')}>RoadMap</MenuItem>
+                    <MenuItem onClick={() => scrollTo('showcase')}>ShowCase</MenuItem>
+                    <MenuItem onClick={() => scrollTo('team')}>Team</MenuItem>
+                    <MenuItem onClick={() => scrollTo('faq')}>FAQ</MenuItem>
                 </Menu>
                 <Button text='Connect Wallet' link='#' />
             </NavBar>

@@ -65,7 +65,7 @@ const Circle = styled.span`
 
 export const Home = () => {
     return (
-        <Section>
+        <Section id='home'>
             <Container>
                 <Box>
                     <TypeWriterText />

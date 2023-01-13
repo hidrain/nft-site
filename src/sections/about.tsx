@@ -59,7 +59,7 @@ const ButtonContainer = styled.div`
 
 export const About = () => {
     return (
-        <Section>
+        <Section id='about'>
             <Container>
                 <Box>
                     <Carousel />

@@ -51,7 +51,7 @@ const Item = styled.li`
 
 export const RoadMap = () => {
     return (
-        <Section>
+        <Section id='roadmap'>
             <Title>Road map</Title>
             <Container>
                 <SvgContainer>

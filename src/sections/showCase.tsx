@@ -139,7 +139,7 @@ export const ShowCase = () => {
     const Row2Ref = useRef<HTMLDivElement>(null)
 
     return (
-        <Section>
+        <Section id='showcase'>
             <Row direction='none' ref={Row1Ref}>
                 <NftItem img={img1} number={852} price={1} passRef={Row1Ref} />
                 <NftItem img={img2} number={123} price={1.2} passRef={Row1Ref} />

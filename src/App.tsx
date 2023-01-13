@@ -11,6 +11,7 @@ import { Home } from './sections/home';
 import { RoadMap } from './sections/roadMap';
 import { ShowCase } from './sections/showCase';
 import { Team } from './sections/team';
+import { ScrollToTop } from './components/scrollToTop';
 
 
 function App() {
@@ -26,6 +27,7 @@ function App() {
         <Team />
         <Faq />
         <Footer />
+        <ScrollToTop />
       </ThemeProvider>
     </>
   );
