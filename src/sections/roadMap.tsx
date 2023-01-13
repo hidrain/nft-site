@@ -58,7 +58,7 @@ export const RoadMap = () => {
                     <DrawSvg />
                 </SvgContainer>
                 <Items>
-                    <Item>1dfdfdfdfd</Item>
+                    <Item>1</Item>
                     <Item>2</Item>
                     <Item>3</Item>
                     <Item>4</Item>
