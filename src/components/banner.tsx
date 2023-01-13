@@ -6,9 +6,6 @@ import img3 from '../assets/nfts/bighead-2.svg'
 import img4 from '../assets/nfts/bighead-3.svg'
 import img5 from '../assets/nfts/bighead-4.svg'
 import img6 from '../assets/nfts/bighead-5.svg'
-import { Button } from './button'
-
-type Props = {}
 
 const Section = styled.section`
     height: 25rem;
@@ -89,7 +86,7 @@ const JoinNow = styled.button`
     }
 `
 
-export const Banner = (props: Props) => {
+export const Banner = () => {
     return (
         <Section>
             <ImgContainer>
@@ -105,7 +102,6 @@ export const Banner = (props: Props) => {
             </Title>
             <BtnContainer>
                 <JoinNow>Join Now</JoinNow>
-                {/* <Button text='join now' link='#' /> */}
             </BtnContainer>
         </Section>
     )
