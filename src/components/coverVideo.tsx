@@ -18,7 +18,7 @@ const VideoContainer = styled.div`
 export const CoverVideo = () => {
     return (
         <VideoContainer>
-            <video src={GIF} autoPlay muted loop />
+            <video src={GIF} autoPlay={true} muted loop />
         </VideoContainer>
     )
 }
