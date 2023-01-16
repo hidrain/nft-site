@@ -17,6 +17,11 @@ const Section = styled.section`
     justify-content: center;
     align-items: center;    
     overflow: hidden;
+
+    @media (max-width: 48em) {
+        height: 15rem;
+        flex-direction: column;
+    }
 `
 const ImgContainer = styled.div`
     width: 100%;
@@ -34,6 +39,13 @@ const ImgContainer = styled.div`
         height: auto;
         transition: all 0.3s ease;
     }
+
+    @media (max-width: 48em) {
+        img {
+        width: 10rem;
+        height: auto;
+        }
+    }
 `
 const Title = styled.h1`
     font-size: ${props => props.theme.fontxxxl};
@@ -43,12 +55,28 @@ const Title = styled.h1`
     width: 35%;
     text-transform: capitalize;
     text-shadow: 1px 1px 2px ${props => props.theme.text};
+
+    @media (max-width: 64em) {
+        font-size: ${props => props.theme.fontxxl};
+        width: 40%;
+        text-align: center;
+    }
+    @media (max-width: 48em) {
+        font-size: ${props => props.theme.fontxl};
+        width: 100%;
+        padding: 2rem 0;
+    }
 `
 const BtnContainer = styled.div`
     width: 35%;
     display: flex;
     justify-content: flex-end;
     font-size: ${props => props.theme.fontxl};
+
+    @media (max-width: 48em) {
+        width: 100%;
+        justify-content: center;
+    }
 `
 const JoinNow = styled.button`
     position: relative;
@@ -63,6 +91,10 @@ const JoinNow = styled.button`
     border-radius: 50px;
     cursor: pointer;
     transition: all 0.2s ease;
+
+    @media (max-width: 48em) {
+        padding: 1rem 2rem;
+    }
 
     &:hover {
         transform: scale(0.9)
