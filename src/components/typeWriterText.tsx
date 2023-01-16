@@ -22,6 +22,17 @@ const Title = styled.h2`
     .text-3 {
         color: #da4b4b;
     }
+
+    @media (max-width: 70em) {
+        font-size: ${props => props.theme.fontxl};
+    }
+    @media (max-width: 48em) {
+       align-self: center;
+       text-align: center;
+    }
+    @media (max-width: 40em) {
+      width: 90%;
+    }
 `
 
 const Subtitle = styled.h3`
@@ -32,11 +43,28 @@ const Subtitle = styled.h3`
     margin-bottom: 1rem;
     width: 80%;
     align-self: flex-start;
+
+    @media (max-width: 48em) {
+       align-self: center;
+       text-align: center;
+    }
+    @media (max-width: 40em) {
+        font-size: ${props => props.theme.fontmd};
+    }
 `
 
 const ButtonContainer = styled.div`
     width: 80%;
     align-self: flex-start;
+
+    @media (max-width: 48em) {
+       align-self: center;
+       text-align: center;
+
+       .button {
+            margin: 0 auto;
+       }
+    }
 `
 
 export const TypeWriterText = () => {
