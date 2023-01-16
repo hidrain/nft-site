@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-export const scrollTo = (id: string) => {
+export const ScrollTo = (id: string) => {
 
     const [click, setClick] = useState(false)
 

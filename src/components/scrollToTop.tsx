@@ -1,7 +1,7 @@
 import { useLayoutEffect, useRef } from 'react'
 import { useWindowScroll } from 'react-use'
 import styled from 'styled-components'
-import { scrollToHome } from '../helpers/scrollToHome'
+import { ScrollToHome } from '../helpers/scrollToHome'
 
 const Up = styled.div`
     width: 3rem;
@@ -44,7 +44,7 @@ export const ScrollToTop = () => {
     }, [y])
 
     return (
-        <Up onClick={() => scrollToHome()} ref={ref}>
+        <Up onClick={() => ScrollToHome()} ref={ref}>
             &#8593;
         </Up>
     )

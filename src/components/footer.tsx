@@ -5,7 +5,7 @@ import LinkedIn from '../icons/linkedIn'
 import Twitter from '../icons/twitter'
 import { Banner } from './banner'
 import { Logo } from './logo'
-import { scrollTo } from '../helpers/scrollTo'
+import { ScrollTo } from '../helpers/scrollTo'
 
 const Section = styled.section`
     min-height: 100vh;
@@ -121,12 +121,12 @@ export const Footer = () => {
                 </Left>
 
                 <MenuItems>
-                    <Item onClick={() => scrollTo('home')}>Home</Item>
-                    <Item onClick={() => scrollTo('about')}>About</Item>
-                    <Item onClick={() => scrollTo('roadmap')}>RoadMap</Item>
-                    <Item onClick={() => scrollTo('showcase')}>ShowCase</Item>
-                    <Item onClick={() => scrollTo('team')}>Team</Item>
-                    <Item onClick={() => scrollTo('faq')}>FAQ</Item>
+                    <Item onClick={() => ScrollTo('home')}>Home</Item>
+                    <Item onClick={() => ScrollTo('about')}>About</Item>
+                    <Item onClick={() => ScrollTo('roadmap')}>RoadMap</Item>
+                    <Item onClick={() => ScrollTo('showcase')}>ShowCase</Item>
+                    <Item onClick={() => ScrollTo('team')}>Team</Item>
+                    <Item onClick={() => ScrollTo('faq')}>FAQ</Item>
                 </MenuItems>
             </Container>
             <Bottom>

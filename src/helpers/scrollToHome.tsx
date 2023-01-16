@@ -1,5 +1,5 @@
 
-export const scrollToHome = () => {
+export const ScrollToHome = () => {
 
     let element = document.getElementById('navigation');
     element?.scrollIntoView({
