@@ -9,11 +9,7 @@ const VectorContainer = styled.div`
     top: 1.5rem;
     left: 50%;
     transform: translateX(-50%);
-    background-color: ${props => props.theme.body};
     margin: 0 auto;
-    /* display: flex; */
-    /* justify-content: center;
-    align-items: center; */
     width: 100%;
     height: 100%;
     overflow: hidden;
@@ -43,8 +39,8 @@ const Ball = styled.div`
 
 export const DrawSvg = () => {
 
-    const ref = useRef(null)
-    const ballRef: any = useRef(null)
+    const ref = useRef<HTMLDivElement>(null)
+    const ballRef = useRef<HTMLDivElement>(null)
 
     gsap.registerPlugin(ScrollTrigger)
 
@@ -53,7 +49,7 @@ export const DrawSvg = () => {
         let element = ref.current
         let svg: any = document.getElementsByClassName('svg-path')[0] as HTMLElement;
 
-        const length: any = svg.getTotalLength()
+        const length = svg.getTotalLength()
 
         //start positioning of svg drawing
         svg.style.strokeDasharray = length
@@ -72,13 +68,13 @@ export const DrawSvg = () => {
                     // reverse the drawing when scroll goes up
                     svg.style.strokeDashoffset = length - draw
                 },
-                // onToggle: (self) => {
-                //     if (self.isActive) {
-                //         ballRef.current.style.display = 'none'
-                //     } else {
-                //         ballRef.current.style.display = 'inline-bloke'
-                //     }
-                // }
+                onToggle: (self) => {
+                    if (self.isActive && ballRef.current) {
+                        ballRef.current.style.display = 'none'
+                    } else if (ballRef.current) {
+                        ballRef.current.style.display = 'inline-block'
+                    }
+                }
             }
         })
 
@@ -89,7 +85,7 @@ export const DrawSvg = () => {
 
     return (
         <>
-            {/* <Ball ref={ballRef} /> */}
+            <Ball ref={ballRef} />
             <VectorContainer ref={ref}>
                 <Vector />
             </VectorContainer>
