@@ -32,6 +32,7 @@ const Section = styled.section`
     justify-content: center;
     align-items: center;
     background-color: ${props => props.theme.text};
+    overflow: hidden;
 
     &>*:first-child{
         animation-duration: 20s;
