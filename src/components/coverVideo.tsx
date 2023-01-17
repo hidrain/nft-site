@@ -1,13 +1,12 @@
 import styled from 'styled-components'
-import GIF from '../assets/HomeVideo.mp4'
+import GIF from '../assets/HomeGIF.gif'
 
 const VideoContainer = styled.div`
     width: 100%;
 
-    video {
+    img {
         width: 100%;
         height: auto;
-
     }
 
     @media (max-width: 64em) {
@@ -18,7 +17,7 @@ const VideoContainer = styled.div`
 export const CoverVideo = () => {
     return (
         <VideoContainer>
-            <video src={GIF} autoPlay={true} muted loop />
+            <img src={GIF} alt='CoverGif' />
         </VideoContainer>
     )
 }
