@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/nft-site/static/css/main.bacf6b88.css",
-    "main.js": "/nft-site/static/js/main.a6bf7c26.js",
+    "main.js": "/nft-site/static/js/main.89d5d0e8.js",
     "static/media/HomeGIF.gif": "/nft-site/static/media/HomeGIF.2532f98863f15ee5d161.gif",
     "static/media/akaya-telivigala-all-400-normal.woff": "/nft-site/static/media/akaya-telivigala-all-400-normal.78fd8cb2a221beeb77ce.woff",
     "static/media/akaya-telivigala-telugu-400-normal.woff2": "/nft-site/static/media/akaya-telivigala-telugu-400-normal.cc24af700d82d6ced8f6.woff2",
@@ -23,10 +23,10 @@
     "static/media/Arrow.svg": "/nft-site/static/media/Arrow.94ea34e744b92c5dad541e35d3a63dab.svg",
     "index.html": "/nft-site/index.html",
     "main.bacf6b88.css.map": "/nft-site/static/css/main.bacf6b88.css.map",
-    "main.a6bf7c26.js.map": "/nft-site/static/js/main.a6bf7c26.js.map"
+    "main.89d5d0e8.js.map": "/nft-site/static/js/main.89d5d0e8.js.map"
   },
   "entrypoints": [
     "static/css/main.bacf6b88.css",
-    "static/js/main.a6bf7c26.js"
+    "static/js/main.89d5d0e8.js"
   ]
 }
