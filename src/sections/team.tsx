@@ -43,7 +43,7 @@ const Container = styled.div`
     width: 75%;
     margin: 2rem auto;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     flex-wrap: wrap;
 

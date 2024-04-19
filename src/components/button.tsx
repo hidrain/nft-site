@@ -43,7 +43,7 @@ const Btn = styled.button`
 export const Button = ({ text, link }: Props) => {
     return (
         <Btn>
-            <a href={link} aria-label={text} target="_blank">
+            <a href={link} aria-label={text}>
                 {text}
             </a>
         </Btn>

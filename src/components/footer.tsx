@@ -105,16 +105,16 @@ export const Footer = () => {
                 <Left>
                     <Logo />
                     <IconList>
-                        <a href="http://facebook.com" target="_blank" rel="noopener">
+                        <a href="http://facebook.com" rel="noopener">
                             <Facebook />
                         </a>
-                        <a href="http://instagram.com" target="_blank" rel="noopener">
+                        <a href="http://instagram.com" rel="noopener">
                             <Instagram />
                         </a>
-                        <a href="http://twitter.com" target="_blank" rel="noopener">
+                        <a href="http://twitter.com" rel="noopener">
                             <Twitter />
                         </a>
-                        <a href="http://linkedin.com" target="_blank" rel="noopener">
+                        <a href="http://linkedin.com" rel="noopener">
                             <LinkedIn />
                         </a>
                     </IconList>
